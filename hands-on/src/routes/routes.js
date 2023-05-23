@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import AlbumPage from "../views/AlbumPage.vue";
 import HomePage from "../views/HomePage.vue";
 import LandingPage from "../views/LandingPage.vue";
-// import app from "../main";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -25,13 +24,9 @@ const router = createRouter({
       },
     },
     { path: "/", component: LandingPage, name: "LandingPage" },
-    // { path: "/", component: HomePage, name: "Home" },
-
     { path: "/album/:albumId", component: AlbumPage, name: "AlbumPage" },
     { path: "/:pathMatch(.*)*", component: LandingPage },
   ],
 });
 
 export default router;
-
-// const routes = [{ path: '/home', redirect: '/' }]

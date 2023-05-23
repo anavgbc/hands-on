@@ -59,6 +59,10 @@ export default {
         .then((res) => {
           this.randomAlbums = [];
           this.albums = res.data.albums.items;
+        })
+        .catch((err) => {
+          router.push({ path: "/" });
+          console.error(err);
         });
     },
 

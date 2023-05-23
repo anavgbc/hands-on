@@ -20,14 +20,11 @@ export default {
     return {
       tracks: [],
       detail: false,
-      //   album: "",
     };
   },
   mounted() {},
-  //   components: { router },
   methods: {
     getTracks(id) {
-      console.log(router);
       router.push({ name: "AlbumPage", params: { albumId: id } });
     },
   },
