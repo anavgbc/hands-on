@@ -2,12 +2,19 @@
 
 Aplicação integrada a API do Spotify que permite ao usuário autenticado buscar por seus albuns favoritos, visualizar informações detalhadas sobre cada álbum, além de ter a opção de redirecionamento para o aplicativo Spotify instalado em seus dispositivos.
 
-## 📜 Pré-requisitos
+## 📜 Pré-requisitos e tecnologias
 
 Antes de começar, verifique se você tem os seguintes pré-requisitos instalados no seu sistema:
 
-- [Node.js:](https://nodejs.org/en) Baixe e instale o Node.js de acordo com a sua plataforma.
+- VueJS
 - Conta no Spotify: Se você ainda não tiver uma conta no Spotify, crie uma em https://www.spotify.com.
+- [Node.js:](https://nodejs.org/en) Baixe e instale o Node.js de acordo com a sua plataforma.
+
+## 🎸 Funcionalidades
+
+- Buscar álbuns por um termo qualquer
+- Descobrir novos álbuns aleatórios
+- Acessar faixa dos albuns
 
 ## 📝 Passo 1: Obter as Credenciais do Spotify
 
