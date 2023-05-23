@@ -6,7 +6,7 @@
       type="text"
       placeholder="O que você quer ouvir?"
     />
-    <button>
+    <button @click="searchData">
       <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
     </button>
   </div>
@@ -59,8 +59,12 @@ export default {
 .search button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: #b2b6b6;
   margin-right: 15px;
   font-size: 10px;
+}
+.search button:hover {
+  color: #ffff;
+  cursor: pointer;
 }
 </style>

@@ -22,13 +22,15 @@ import AlbumList from "../components/AlbumList.vue";
 import Header from "../components/Header.vue";
 import { apiToken } from "../services/axios";
 import router from "@/routes/routes";
+import { data } from "../../src/data";
 
 export default {
   name: "HomePage",
   data: () => {
     return {
-      clientId: process.env.VUE_APP_CLIENTID,
-      clientSecret: process.env.VUE_APP_CLIENT_SECRET,
+      clientId: data.VUE_APP_CLIENTID,
+      clientSecret: data.VUE_APP_CLIENT_SECRET,
+      redirectUri: "http://localhost:8080/home",
       querySearch: "",
       albums: [],
       tracks: [],

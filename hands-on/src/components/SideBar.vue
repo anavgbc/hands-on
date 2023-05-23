@@ -60,17 +60,19 @@ export default {
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: #b2b6b6;
   justify-content: center;
 }
 
 .menu a:hover {
   background-color: rgb(55, 58, 62);
   cursor: pointer;
+  color: white;
 }
 
 .menu svg {
   padding-right: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 #logo {
@@ -83,11 +85,12 @@ export default {
 #logo svg {
   padding-left: 0;
 }
-
-@media (max-width: 768px) {
-  .menu svg {
-    display: none;
-  }
+#logo svg:hover {
+  padding-left: 0;
+}
+.menu svg:hover {
+  transform: rotate(360deg);
+  color: #1f3f4d;
 }
 
 @media (max-width: 390px) {

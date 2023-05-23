@@ -72,9 +72,6 @@ export default {
   #header span {
     width: 50%;
   }
-  /* .user--info {
-    width: 40%;
-  } */
 }
 
 .user--info img {
@@ -97,8 +94,11 @@ export default {
   border-radius: 5px;
   padding: 8px 10px;
   margin-left: 5px;
+  background-color: #b2b6b6;
 }
 .btn:hover {
   cursor: pointer;
+  background-color: #ffff;
+  color: #1f3f4d;
 }
 </style>

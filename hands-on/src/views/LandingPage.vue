@@ -3,9 +3,9 @@
     <div class="container">
       <span id="logo">
         <font-awesome-icon icon="fa-solid fa-shuffle" />
-        Hands on!
+        <h2>Hands on!</h2>
       </span>
-      <h3>Vamos começar!</h3>
+      <p>Faça login para começar</p>
       <button class="btn login" @click="authenticate">Autenticar</button>
     </div>
   </div>
@@ -15,6 +15,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faShuffle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { data } from "../../src/data";
 
 library.add(faShuffle);
 
@@ -22,12 +23,10 @@ export default {
   name: "LandingPage",
   data: () => {
     return {
-      clientId: process.env.VUE_APP_CLIENTID,
+      clientId: data.VUE_APP_CLIENTID,
       redirectUri: "http://localhost:8080/home",
       scopes: ["user-read-private", "user-read-email"],
-      clientSecret: process.env.VUE_APP_CLIENT_SECRET,
-      albums: [],
-      detail: false,
+      clientSecret: data.VUE_APP_CLIENT_SECRET,
     };
   },
   components: { FontAwesomeIcon },
@@ -53,12 +52,16 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
 .container {
-  height: 40%;
+  height: 45%;
   width: 35%;
-  background-color: rgb(49 49 50 / 91%);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -69,6 +72,37 @@ export default {
 #logo {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+#logo h2 {
+  margin-left: 10px;
+}
+
+#logo svg {
+  transition: transform 0.3s ease-in-out;
+  font-size: 20px;
+}
+#logo svg:hover {
+  transform: rotate(360deg);
+}
+
+.container button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #176c61;
+}
+.container button:hover {
+  background-color: #156459;
+  cursor: pointer;
+}
+.container p {
+  color: #142e39;
+}
+.container p:hover {
+  color: #1f3f4d;
 }
 
 @media (max-width: 600px) {
@@ -82,17 +116,5 @@ export default {
     width: 90%;
     height: 60%;
   }
-}
-
-.container button {
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  color: white;
-  background-color: #176c61;
-}
-.container button:hover {
-  background-color: #156459;
-  cursor: pointer;
 }
 </style>

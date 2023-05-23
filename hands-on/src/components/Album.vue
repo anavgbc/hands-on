@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .album {
-  width: 20%;
+  width: 25%;
   max-height: 30%;
   border-radius: 10px;
   padding-top: 10px;
@@ -51,22 +51,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@media (max-width: 390px) {
-  .album {
-    width: 40%;
-  }
-}
-@media (max-width: 600px) {
-  .album {
-    width: 40%;
-  }
-}
-@media (min-width: 600px) {
-  .album {
-    width: 25%;
-  }
 }
 
 .album:hover {
@@ -112,8 +96,15 @@ export default {
     max-width: 8ch;
   }
 }
-
 @media (max-width: 600px) {
+  #album-name {
+    max-width: 10ch;
+  }
+  .album {
+    width: 40%;
+  }
+}
+@media (min-width: 600px) {
   #album-name {
     max-width: 10ch;
   }
@@ -121,12 +112,6 @@ export default {
 @media (max-width: 768px) {
   .album--info span {
     display: none;
-  }
-}
-
-@media (min-width: 600px) {
-  #album-name {
-    max-width: 10ch;
   }
 }
 </style>
