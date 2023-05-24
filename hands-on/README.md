@@ -22,12 +22,13 @@ Para que a aplicação funcione corretamente, você precisa obter as credenciais
 
 - Acesse a [Dashboard de Desenvolvedores](https://developer.spotify.com/dashboard) do Spotify e faça login com sua conta do Spotify.
 - Crie um novo aplicativo clicando no botão "Create an App".
-  Preencha as informações solicitadas, como nome do aplicativo e descrição.
+  Preencha as informações solicitadas, como nome do aplicativo e descrição. O campo de Redirect URIs deve ser preenchido de forma correta.
 
   Exemplo:
 
   - App Name: My App
   - App Description: This is my first Spotify app
+  - Redirect URIs: http://localhost:8080/home
 
 - Após a criação do aplicativo, você verá o ID do Cliente e o Segredo do Cliente na página do aplicativo. Anote essas informações, pois você precisará delas mais tarde.
 
