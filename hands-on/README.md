@@ -37,7 +37,7 @@ Para que a aplicação funcione corretamente, você precisa obter as credenciais
 Abra o terminal ou prompt de comando, navegue até o diretório desejado e execute o seguinte comando:
 
 ```
-git@github.com:seu-usuario/hands-on.git
+git clone git@github.com:seu-usuario/hands-on.git
 ```
 
 Substitua seu-usuario pelo seu nome de usuário do GitHub.
