@@ -9,12 +9,6 @@ export default {
   name: "App",
   data: () => {
     return {
-      // clientId: "edfa1a4a582c4e8bb0e2c2e9ebe633b6",
-      // redirectUri: "http://localhost:8080/logged",
-      // scopes: ["user-read-private", "user-read-email"],
-      // clientSecret: "dd082e40208b4961bba35c39cc017af8",
-      // albums: [],
-      // detail: false,
     };
   },
 };
